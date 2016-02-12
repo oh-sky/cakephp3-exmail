@@ -1,0 +1,32 @@
+{
+    "name": "oh-sky/cakephp3-exmail",
+    "description": "CakePHP3 extension to encode the messages with Base64 or QuotedPrintable.",
+    "type": "library",
+    "require": {
+        "cakephp/cakephp": "3.1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "oh-sky",
+            "email": "yoshihiro.ohsuka@gmail.com"
+        }
+    ],
+    "keywords": ["CakePHP", "Email", "Base64", "Quoted Printable Encode"],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "OhSky\\Cakephp3Exmail\\": "src",
+            "OhSky\\Cakephp3Exmail\\Encoder\\": "src/Encoder"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OhSky\\Cakephp3Exmail\\Test\\": "src/tests"
+        }
+    },
+    "include-path": ["src/", "src/Encoder/"]
+}
